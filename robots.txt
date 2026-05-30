@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: /img/
+
+Sitemap: https://windowsrevolution.nl/sitemap.xml
