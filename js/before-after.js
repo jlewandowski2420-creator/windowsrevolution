@@ -28,7 +28,6 @@
         
         beforeImg.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
         divider.style.left = pct + '%';
-        handle.style.left = pct + '%';
       }
 
       // Mouse events
@@ -90,14 +89,12 @@
           e.preventDefault();
           beforeImg.style.clipPath = `inset(0 ${100 - currentLeft}% 0 0)`;
           divider.style.left = currentLeft + '%';
-          handle.style.left = currentLeft + '%';
         }
       });
 
       // Initialize at 50/50
       beforeImg.style.clipPath = 'inset(0 50% 0 0)';
       divider.style.left = '50%';
-      handle.style.left = '50%';
     });
   }
 

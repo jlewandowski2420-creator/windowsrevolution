@@ -162,11 +162,9 @@ img{max-width:100%;height:auto;display:block}
 .ba-slider .ba-after{z-index:1}
 .ba-slider .ba-before{z-index:2}
 
-/* -- Divider line -- */
+/* -- Divider line + handle (handle is child of divider, always moves together) -- */
 .ba-divider{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--white);z-index:10;pointer-events:none;box-shadow:0 0 8px rgba(0,0,0,.4),0 0 2px rgba(0,0,0,.6);transform:translateX(-50%)}
-
-/* -- Draggable handle -- */
-.ba-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:11;width:44px;height:44px;background:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:grab;box-shadow:0 2px 12px rgba(0,0,0,.35);transition:transform .15s}
+.ba-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:11;width:44px;height:44px;background:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:grab;pointer-events:auto;box-shadow:0 2px 12px rgba(0,0,0,.35);transition:transform .15s}
 .ba-handle:active{cursor:grabbing;transform:translate(-50%,-50%) scale(1.1)}
 .ba-slider:hover .ba-handle{transform:translate(-50%,-50%) scale(1.05)}
 .ba-handle::before,.ba-handle::after{content:'';display:block;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent}
