@@ -161,21 +161,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = contactForm.querySelector('#message')?.value.trim();
       
       if (!name || !email || !phone || !message) {
-        showFormMessage('Vul alle verplichte velden in.', 'error');
+        showFormMessage(I18N.t('form-error-required'), 'error');
         return;
       }
       
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showFormMessage('Voer een geldig e-mailadres in.', 'error');
+        showFormMessage(I18N.t('form-error-email'), 'error');
         return;
       }
 
       // Simulate submission
-      submitBtn.textContent = 'Verzenden...';
+      submitBtn.textContent = I18N.t('form-sending');
       submitBtn.disabled = true;
       
       setTimeout(() => {
-        showFormMessage('Bedankt! We nemen binnen 30 minuten contact met u op.', 'success');
+        showFormMessage(I18N.t('form-success'), 'success');
         contactForm.reset();
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
