@@ -6,11 +6,14 @@
 <meta property="og:title" content="Contact | Windows Revolution | Offerte Aanvragen">
 <meta property="og:description" content="Contact met Windows Revolution — bel of stuur een bericht voor ramen plaatsen, reparatie of glas vervangen. Vrijblijvende offerte.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://windowsrevolution.nl/contact">
+<meta property="og:url" content="https://windowsrevolution.nl/contact.html">
 <meta property="og:site_name" content="Windows Revolution">
 <meta property="og:locale" content="nl_NL">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://windowsrevolution.nl/contact">
+<meta property="og:image" content="https://windowsrevolution.nl/images/og-cover.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://windowsrevolution.nl/contact.html">
 <meta name="description" content="Contact met Windows Revolution — bel of stuur een bericht voor ramen plaatsen, reparatie of glas vervangen. Vrijblijvende offerte.">
 <title data-i18n="contact-page-title">Contact | Windows Revolution</title>
 <link rel="stylesheet" href="css/style.css">
@@ -38,6 +41,16 @@
   "areaServed": ["Amsterdam","Rotterdam","Den Haag","Utrecht","Haarlem","Leiden","Almere","Amersfoort","Eindhoven"],
   "url": "https://windowsrevolution.nl",
   "sameAs": ["https://www.facebook.com/windowsrevolution","https://www.instagram.com/windowsrevolution"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://windowsrevolution.nl/"},
+    {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://windowsrevolution.nl/contact.html"}
+  ]
 }
 </script>
 </head>
@@ -79,18 +92,18 @@
       <!-- FORM -->
       <div class="contact-form">
         <h3 data-i18n="contact-form-title">Stuur ons een bericht</h3>
-        <form id="contact-form">
+        <form id="contact-form" method="POST" action="#">
           <div class="form-group">
             <label for="name" data-i18n="contact-form-name">Naam *</label>
-            <input type="text" id="name" name="name" data-i18n-placeholder="contact-form-placeholder-name" placeholder="Uw volledige naam" required>
+            <input type="text" id="name" name="name" autocomplete="name" data-i18n-placeholder="contact-form-placeholder-name" placeholder="Uw volledige naam" required>
           </div>
           <div class="form-group">
             <label for="email" data-i18n="contact-form-email">E-mail *</label>
-            <input type="email" id="email" name="email" data-i18n-placeholder="contact-form-placeholder-email" placeholder="uw@email.nl" required>
+            <input type="email" id="email" name="email" autocomplete="email" data-i18n-placeholder="contact-form-placeholder-email" placeholder="uw@email.nl" required>
           </div>
           <div class="form-group">
             <label for="phone" data-i18n="contact-form-phone">Telefoon *</label>
-            <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact-form-placeholder-phone" placeholder="06 1234 5678" required>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" data-i18n-placeholder="contact-form-placeholder-phone" placeholder="06 1234 5678" required>
           </div>
           <div class="form-group">
             <label for="service" data-i18n="contact-form-service">Gewenste dienst</label>
@@ -112,7 +125,7 @@
             <div class="form-group">
               <label class="consent-label">
                 <input type="checkbox" id="consent" name="consent" required>
-                <span data-i18n-html="contact-form-consent">Ik ga akkoord met de <a href='privacy.html' target='_blank'>privacyverklaring</a> en het <a href='terms.html' target='_blank'>reglement</a>. *</span>
+                <span data-i18n-html="contact-form-consent">Ik ga akkoord met de <a href='privacy.html' target='_blank' rel='noopener noreferrer'>privacyverklaring</a> en het <a href='terms.html' target='_blank' rel='noopener noreferrer'>reglement</a>. *</span>
               </label>
             </div>
             <button type="submit" class="btn btn-primary btn-large" data-i18n="contact-form-submit">Verstuur aanvraag →</button>
