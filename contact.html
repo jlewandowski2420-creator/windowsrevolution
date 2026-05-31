@@ -12,7 +12,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://windowsrevolution.nl/contact">
 <meta name="description" content="Contact met Windows Revolution — bel of stuur een bericht voor ramen plaatsen, reparatie of glas vervangen. Vrijblijvende offerte.">
-<title>Contact | Windows Revolution</title>
+<title data-i18n="contact-page-title">Contact | Windows Revolution</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231A1A1A'/><text x='50' y='68' text-anchor='middle' font-size='50' font-weight='800' fill='%23DA291C'>WR</text></svg>">
 <script type="application/ld+json">
@@ -67,10 +67,10 @@
 <section class="page-hero" id="main-content">
   <div class="container">
     <h1 data-i18n="contact-hero-title">Contact</h1>
-    <p>Bel ons direct of stuur een bericht — wij reageren binnen 30 minuten.</p>
+    <p data-i18n="contact-hero-sub">Bel ons direct of stuur een bericht — wij reageren binnen 30 minuten.</p>
   </div>
 </section>
-<div class="breadcrumbs"><div class="container"><a href='./'>Home</a> <span class="sep">›</span> Contact</div></div>
+<div class="breadcrumbs"><div class="container"><a href='./' data-i18n="nav-home">Home</a> <span class="sep">›</span> <span data-i18n="contact-hero-title">Contact</span></div></div>
 
 <section class="section">
   <div class="container">
@@ -78,44 +78,44 @@
 
       <!-- FORM -->
       <div class="contact-form">
-        <h3>Stuur ons een bericht</h3>
+        <h3 data-i18n="contact-form-title">Stuur ons een bericht</h3>
         <form id="contact-form">
           <div class="form-group">
-            <label for="name">Naam *</label>
-            <input type="text" id="name" name="name" placeholder="Uw volledige naam" required>
+            <label for="name" data-i18n="contact-form-name">Naam *</label>
+            <input type="text" id="name" name="name" data-i18n-placeholder="contact-form-placeholder-name" placeholder="Uw volledige naam" required>
           </div>
           <div class="form-group">
-            <label for="email">E-mail *</label>
-            <input type="email" id="email" name="email" placeholder="uw@email.nl" required>
+            <label for="email" data-i18n="contact-form-email">E-mail *</label>
+            <input type="email" id="email" name="email" data-i18n-placeholder="contact-form-placeholder-email" placeholder="uw@email.nl" required>
           </div>
           <div class="form-group">
-            <label for="phone">Telefoon *</label>
-            <input type="tel" id="phone" name="phone" placeholder="06 1234 5678" required>
+            <label for="phone" data-i18n="contact-form-phone">Telefoon *</label>
+            <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact-form-placeholder-phone" placeholder="06 1234 5678" required>
           </div>
           <div class="form-group">
-            <label for="service">Gewenste dienst</label>
+            <label for="service" data-i18n="contact-form-service">Gewenste dienst</label>
             <select id="service" name="service">
-              <option value="">— Maak een keuze —</option>
-              <option value="plaatsen">Ramen plaatsen</option>
-              <option value="reparatie">Reparatie & onderhoud</option>
-              <option value="glas">Glas vervangen</option>
-              <option value="spoed">Spoedservice (24/7)</option>
-              <option value="advies">Vrijblijvend advies</option>
-              <option value="anders">Anders</option>
+              <option value="" data-i18n="contact-form-service-opt">— Maak een keuze —</option>
+              <option value="plaatsen" data-i18n="contact-form-service-plaatsen">Ramen plaatsen</option>
+              <option value="reparatie" data-i18n="contact-form-service-reparatie">Reparatie & onderhoud</option>
+              <option value="glas" data-i18n="contact-form-service-glas">Glas vervangen</option>
+              <option value="spoed" data-i18n="contact-form-service-spoed">Spoedservice (24/7)</option>
+              <option value="advies" data-i18n="contact-form-service-advies">Vrijblijvend advies</option>
+              <option value="anders" data-i18n="contact-form-service-anders">Anders</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Uw bericht *</label>
-            <textarea id="message" name="message" placeholder="Beschrijf kort wat u nodig heeft..." required></textarea>
+            <label for="message" data-i18n="contact-form-message">Uw bericht *</label>
+            <textarea id="message" name="message" data-i18n-placeholder="contact-form-placeholder-message" placeholder="Beschrijf kort wat u nodig heeft..." required></textarea>
           </div>
           <div class="form-submit">
             <div class="form-group">
               <label class="consent-label">
                 <input type="checkbox" id="consent" name="consent" required>
-                <span>Ik ga akkoord met de <a href='privacy.html' target='_blank'>privacyverklaring</a> en de verwerking van mijn persoonsgegevens. *</span>
+                <span data-i18n-html="contact-form-consent">Ik ga akkoord met de <a href='privacy.html' target='_blank'>privacyverklaring</a> en het <a href='terms.html' target='_blank'>reglement</a>. *</span>
               </label>
             </div>
-            <button type="submit" class="btn btn-primary btn-large">Verstuur aanvraag →</button>
+            <button type="submit" class="btn btn-primary btn-large" data-i18n="contact-form-submit">Verstuur aanvraag →</button>
           </div>
           <p style="font-size:.8rem;color:var(--gray);margin-top:.75rem;text-align:center">Wij reageren binnen 30 minuten tijdens kantoortijden.</p>
         </form>
@@ -219,8 +219,8 @@
           <li><a data-i18n='footer-b1' href='over-ons.html'>Over ons</a></li>
           <li><a data-i18n='footer-b2' href='projecten.html'>Projecten</a></li>
           <li><a data-i18n='footer-b3' href='contact.html'>Contact</a></li>
-          <li><a href="#" data-i18n="footer-b4">Privacyverklaring</a></li>
-          <li><a href="#" data-i18n="footer-b5">Algemene voorwaarden</a></li>
+          <li><a data-i18n='footer-b4' href='privacy.html'>Privacyverklaring</a></li>
+          <li><a data-i18n='footer-b5' href='terms.html'>Algemene voorwaarden</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -239,6 +239,16 @@
     </div>
   </div>
 </footer>
+
+<div id="cookie-bar" class="cookie-bar">
+  <div class="container">
+    <p data-i18n="cookie-text">Deze website gebruikt functionele cookies om de site goed te laten werken. U kunt deze accepteren of weigeren.</p>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn--decline" data-i18n="cookie-decline">Weigeren</button>
+      <button class="cookie-btn cookie-btn--accept" data-i18n="cookie-accept">Akkoord</button>
+    </div>
+  </div>
+</div>
 
 <div class="mobile-cta">
 <a href="tel:+316****5678" class="btn btn-primary" data-i18n="mobile-call">📞 Bel direct</a>

@@ -292,4 +292,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ─── COOKIE CONSENT BANNER ───
+  const cookieBar = document.getElementById('cookie-bar');
+  if (cookieBar && !localStorage.getItem('wr-cookie-consent')) {
+    cookieBar.classList.add('cookie-bar--visible');
+    const acceptBtn = cookieBar.querySelector('.cookie-btn--accept');
+    const declineBtn = cookieBar.querySelector('.cookie-btn--decline');
+    if (acceptBtn) acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('wr-cookie-consent', 'accepted');
+      cookieBar.classList.remove('cookie-bar--visible');
+    });
+    if (declineBtn) declineBtn.addEventListener('click', () => {
+      localStorage.setItem('wr-cookie-consent', 'declined');
+      cookieBar.classList.remove('cookie-bar--visible');
+    });
+  }
+
 });
