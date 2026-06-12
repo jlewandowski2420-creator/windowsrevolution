@@ -308,4 +308,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ─── COUNTUP ANIMATION ───
+  const statNumbers = document.querySelectorAll('.stat-number');
+  if (statNumbers.length) {
+    const countUp = (el) => {
+      const raw = el.getAttribute('data-i18n');
+      const dict = I18N && I18N.dict ? I18N.dict[I18N.current || 'nl'] : {};
+      const text = dict[raw] || el.textContent;
+      const num = parseFloat(text.replace(/[^0-9.]/g, ''));
+      const suffix = text.replace(/[0-9.]/g, '').trim();
+      const isDecimal = text.includes('.');
+      const duration = 1800;
+      const steps = 60;
+      const increment = num / steps;
+      let current = 0;
+      let step = 0;
+      const timer = setInterval(() => {
+        step++;
+        current = step >= steps ? num : current + increment;
+        el.textContent = (isDecimal ? current.toFixed(1) : Math.round(current)) + suffix;
+        if (step >= steps) clearInterval(timer);
+      }, duration / steps);
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          countUp(entry.target);
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(el => statsObserver.observe(el));
+  }
+
 });
