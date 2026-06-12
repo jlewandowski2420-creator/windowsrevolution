@@ -7,7 +7,8 @@
 /* ─── RESET & BASE ─── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1a1a1a;line-height:1.6;background:#fff;overflow-x:hidden}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1a1a1a;line-height:1.6;background:#fff;overflow-x:hidden;padding-bottom:72px}
+@media(min-width:768px){body{padding-bottom:0}}
 
 :root{
   --black:#1A1A1A;--black-dark:#0D0D0D;
@@ -33,7 +34,8 @@ img{max-width:100%;height:auto;display:block}
 .section{padding:5rem 0}
 @media(min-width:768px){.section{padding:6rem 0}}
 
-.btn{display:inline-block;padding:.85rem 1.75rem;border-radius:var(--radius);font-weight:700;font-size:.95rem;cursor:pointer;transition:all var(--transition);border:none;text-align:center;white-space:nowrap}
+.btn{display:inline-block;padding:.85rem 1.75rem;border-radius:var(--radius);font-weight:700;font-size:.95rem;cursor:pointer;transition:all var(--transition);border:none;text-align:center;white-space:normal}
+@media(min-width:480px){.btn{white-space:nowrap}}
 .btn-primary{background:var(--red);color:var(--white)}
 .btn-primary:hover{background:var(--red-hover);color:var(--white);transform:translateY(-1px);box-shadow:0 4px 14px rgba(218,41,28,.35)}
 .btn-secondary{background:var(--white);color:var(--black);border:2px solid var(--black)}
@@ -253,7 +255,7 @@ img{max-width:100%;height:auto;display:block}
 .footer-bottom{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.15);text-align:center;font-size:.8rem;opacity:.7}
 
 /* ─── MOBILE FLOAT CTA ─── */
-.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--black);padding:.75rem 1rem;gap:.5rem;box-shadow:0 -2px 12px rgba(0,0,0,.3);transition:transform .3s ease}
+.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--black);padding:.75rem 1rem;gap:.5rem;box-shadow:0 -2px 12px rgba(0,0,0,.3);transition:bottom .3s ease,transform .3s ease}
 .mobile-cta.hidden{transform:translateY(100%)}
 .mobile-cta .btn{flex:1;text-align:center;padding:.7rem;font-size:.85rem}
 @media(min-width:768px){.mobile-cta{display:none}}
@@ -338,7 +340,8 @@ img{max-width:100%;height:auto;display:block}
 .stat-label{display:block;font-size:.85rem;color:var(--gray);margin-top:.3rem;font-weight:500}
 
 /* ─── COOKIE CONSENT BANNER ─── */
-.cookie-bar{position:fixed;bottom:0;left:0;right:0;background:var(--black-dark);color:var(--white);padding:1rem 1.5rem;z-index:9999;transform:translateY(100%);transition:transform .4s ease;box-shadow:0 -4px 20px rgba(0,0,0,.4)}
+.cookie-bar{position:fixed;bottom:0;left:0;right:0;background:var(--black-dark);color:var(--white);padding:.75rem 1rem;z-index:9999;transform:translateY(100%);transition:transform .4s ease;box-shadow:0 -4px 20px rgba(0,0,0,.4)}
+@media(max-width:767px){.cookie-bar--visible~.mobile-cta,.mobile-cta:has(~.cookie-bar--visible){display:none}}
 .cookie-bar--visible{transform:translateY(0)}
 .cookie-bar .container{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;justify-content:space-between}
 .cookie-bar p{font-size:.85rem;color:rgba(255,255,255,.85);line-height:1.4;flex:1;min-width:250px}
