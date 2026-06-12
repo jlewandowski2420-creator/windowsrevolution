@@ -28,6 +28,7 @@ h3{font-size:1.25rem;font-weight:600}
 a{color:var(--red);text-decoration:none;transition:color var(--transition)}
 a:hover{color:var(--red-hover)}
 img{max-width:100%;height:auto;display:block}
+.service-card,.gallery-item,.review-card,.trust-item{max-width:100%}
 
 /* ─── UTILITIES ─── */
 .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.25rem}
@@ -127,12 +128,12 @@ img{max-width:100%;height:auto;display:block}
 .trust-section{background:var(--offwhite)}
 .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 @media(min-width:768px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
-.trust-item{display:flex;gap:1rem;align-items:flex-start;padding:1.25rem;border:1px solid var(--lightgray);border-top:3px solid var(--red);background:var(--white)}
-.trust-item .icon-box{width:44px;height:44px;background:var(--red);display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:var(--radius)}
+.trust-item{display:flex;gap:1rem;align-items:flex-start;padding:1.25rem;border:1px solid var(--lightgray);border-top:3px solid var(--red);background:var(--white);overflow:hidden}
+.trust-item .icon-box{width:44px;min-width:44px;height:44px;background:var(--red);display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:var(--radius)}
 .trust-item .icon-box svg{width:22px;height:22px;stroke:var(--white);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .trust-item .icon{font-size:2rem;margin-bottom:.75rem}
 .trust-item h4{font-family:var(--font-display);font-size:.95rem;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--black);margin-bottom:.25rem}
-.trust-item p{font-size:.82rem;color:var(--gray);line-height:1.55}
+.trust-item p{font-size:.82rem;color:var(--gray);line-height:1.55;word-wrap:break-word;overflow-wrap:break-word;word-break:break-word}
 
 /* ─── REVIEWS ─── */
 .reviews-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
