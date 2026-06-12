@@ -85,7 +85,7 @@
 </header>
 
 
-<section class="hero" id="main-content" style="background:linear-gradient(135deg,rgba(13,13,13,.88) 0%,rgba(13,13,13,.75) 100%),url('images/hero.webp') center/cover no-repeat">
+<section class="hero" id="main-content" style="background:linear-gradient(105deg,rgba(13,13,13,.97) 0%,rgba(13,13,13,.88) 45%,rgba(13,13,13,.55) 75%,rgba(13,13,13,.3) 100%),url('images/hero.webp') center right/cover no-repeat">
   <div class="container">
     <h1 data-i18n-html="hero-title">Vakkundig raamwerk <span>door heel Nederland</span></h1>
     <p data-i18n="hero-subtitle">Al 10+ jaar plaatsen, repareren en vervangen wij ramen bij 2000+ tevreden klanten. Spoed? Onze monteur staat gemiddeld binnen 90 minuten voor uw deur — geen voorrijkosten.</p>
@@ -111,25 +111,43 @@
     </div>
     <div class="services-grid">
       <div class="service-card">
+        <div class="service-card-head">
+          <span class="cat">Dienst 01</span>
+          <span class="cat-icon">🪟</span>
+        </div>
+        <div class="service-card-body">
         <img loading="lazy" src="images/service-ramen-plaatsen.webp" alt="Ramen plaatsen" data-i18n-alt="service-1-alt" class="card-img">
         <h3 data-i18n="service-1-title">Ramen Plaatsen</h3>
-        <p data-i18n="service-1-desc">Nieuwbouw of renovatie? Wij plaatsen hout, kunststof en aluminium kozijnen met HR++ of triple glas. Tot 40% lagere energierekening.</p>
-        <div class="price" data-i18n-html="service-1-price">Vanaf <strong>€ 450</strong><small> per raam</small></div>
-        <a class='btn btn-primary' data-i18n='service-1-cta' href='diensten.html' style='margin-top:.75rem'>Meer informatie</a>
+          <p data-i18n="service-1-desc">Nieuwbouw of renovatie? Wij plaatsen hout, kunststof en aluminium kozijnen met HR++ of triple glas. Tot 40% lagere energierekening.</p>
+          <div class="price" data-i18n-html="service-1-price">Vanaf <strong>€ 450</strong><small> per raam</small></div>
+          <a class='btn btn-primary' data-i18n='service-1-cta' href='diensten.html' style='margin-top:.75rem'>Meer informatie</a>
+        </div>
       </div>
       <div class="service-card">
+        <div class="service-card-head">
+          <span class="cat">Dienst 02</span>
+          <span class="cat-icon">🔧</span>
+        </div>
+        <div class="service-card-body">
         <img loading="lazy" src="images/service-reparatie.webp" alt="Reparatie & onderhoud" data-i18n-alt="service-2-alt" class="card-img">
         <h3 data-i18n="service-2-title">Reparatie & Onderhoud</h3>
-        <p data-i18n="service-2-desc">Lekkage, tocht of vastzittend raam? Onze monteurs repareren het meestal binnen 1 werkdag — 95% van de klanten beoordeelt ons met 5 sterren.</p>
-        <div class="price" data-i18n-html="service-2-price">Vanaf <strong>€ 85</strong><small> voorrijkosten incl.</small></div>
-        <a class='btn btn-primary' data-i18n='service-2-cta' href='diensten.html' style='margin-top:.75rem'>Meer informatie</a>
+          <p data-i18n="service-2-desc">Lekkage, tocht of vastzittend raam? Onze monteurs repareren het meestal binnen 1 werkdag — 95% van de klanten beoordeelt ons met 5 sterren.</p>
+          <div class="price" data-i18n-html="service-2-price">Vanaf <strong>€ 85</strong><small> voorrijkosten incl.</small></div>
+          <a class='btn btn-primary' data-i18n='service-2-cta' href='diensten.html' style='margin-top:.75rem'>Meer informatie</a>
+        </div>
       </div>
       <div class="service-card">
+        <div class="service-card-head">
+          <span class="cat">Dienst 03</span>
+          <span class="cat-icon">✦</span>
+        </div>
+        <div class="service-card-body">
         <img loading="lazy" src="images/service-glas-vervangen.webp" alt="Glas vervangen" data-i18n-alt="service-3-alt" class="card-img">
         <h3 data-i18n="service-3-title">Glas Vervangen</h3>
-        <p data-i18n="service-3-desc">Enkel, dubbel of triple glas — gemiddeld 30% lagere stookkosten met HR++ glas. 10 jaar garantie op al ons glaswerk.</p>
-        <div class="price" data-i18n-html="service-3-price">Vanaf <strong>€ 120</strong><small> per m²</small></div>
-        <a class='btn btn-primary' data-i18n='service-3-cta' href='diensten.html' style='margin-top:.75rem'>Meer informatie</a>
+          <p data-i18n="service-3-desc">Enkel, dubbel of triple glas — gemiddeld 30% lagere stookkosten met HR++ glas. 10 jaar garantie op al ons glaswerk.</p>
+          <div class="price" data-i18n-html="service-3-price">Vanaf <strong>€ 120</strong><small> per m²</small></div>
+          <a class='btn btn-primary' data-i18n='service-3-cta' href='diensten.html' style='margin-top:.75rem'>Meer informatie</a>
+        </div>
       </div>
     </div>
   </div>
@@ -145,24 +163,32 @@
     </div>
     <div class="trust-grid">
       <div class="trust-item">
-        <div class="icon">⚡</div>
-        <h4 data-i18n="trust-1-title">Binnen 2 uur ter plaatse</h4>
-        <p data-i18n="trust-1-desc">Spoedmelding voor 16:00? Vandaag nog geholpen.</p>
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-2 8 11-12h-7l2-8z" fill="currentColor" stroke="none"/></svg></div>
+        <div>
+          <h4 data-i18n="trust-1-title">Binnen 2 uur ter plaatse</h4>
+          <p data-i18n="trust-1-desc">Spoedmelding voor 16:00? Vandaag nog geholpen.</p>
+        </div>
       </div>
       <div class="trust-item">
-        <div class="icon">🛡️</div>
-        <h4 data-i18n="trust-2-title">10 jaar garantie</h4>
-        <p data-i18n="trust-2-desc">Op al onze plaatsingen en materialen.</p>
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2Z"/><polyline points="9,12 11,14 15,10"/></svg></div>
+        <div>
+          <h4 data-i18n="trust-2-title">10 jaar garantie</h4>
+          <p data-i18n="trust-2-desc">Op al onze plaatsingen en materialen.</p>
+        </div>
       </div>
       <div class="trust-item">
-        <div class="icon">🏅</div>
-        <h4 data-i18n="trust-3-title">VCA & KOMO gecertificeerd</h4>
-        <p data-i18n="trust-3-desc">Wij werken volgens de hoogste normen.</p>
+        <div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8.56 13.8L7 23l5-3 5 3-1.56-9.2"/></svg></div>
+        <div>
+          <h4 data-i18n="trust-3-title">VCA & KOMO gecertificeerd</h4>
+          <p data-i18n="trust-3-desc">Wij werken volgens de hoogste normen.</p>
+        </div>
       </div>
       <div class="trust-item">
-        <div class="icon">🇳🇱</div>
-        <h4 data-i18n="trust-4-title">Heel Nederland</h4>
-        <p data-i18n="trust-4-desc">Geen voorrijkosten in de Randstad & daarbuiten.</p>
+        <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div>
+          <h4 data-i18n="trust-4-title">Heel Nederland</h4>
+          <p data-i18n="trust-4-desc">Geen voorrijkosten in de Randstad & daarbuiten.</p>
+        </div>
       </div>
     </div>
   </div>

@@ -6,8 +6,8 @@
 
 /* ─── RESET & BASE ─── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1a1a1a;line-height:1.6;background:#fff;overflow-x:hidden;padding-bottom:72px}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden;max-width:100vw}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1a1a1a;line-height:1.6;background:#fff;overflow-x:hidden;padding-bottom:72px;max-width:100vw}
 @media(min-width:768px){body{padding-bottom:0}}
 
 :root{
@@ -84,7 +84,7 @@ img{max-width:100%;height:auto;display:block}
 
 /* ─── HERO ─── */
 .hero{background:var(--black);color:var(--white);padding:3rem 0 3.5rem;position:relative;overflow:hidden;width:100%}
-.hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:44%;background:rgba(218,41,28,.07);clip-path:polygon(14% 0,100% 0,100% 100%,0% 100%);border-left:3px solid rgba(218,41,28,.5);pointer-events:none;z-index:1}
+.hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:40%;background:rgba(218,41,28,.07);clip-path:polygon(10% 0,100% 0,100% 100%,0% 100%);border-left:3px solid rgba(218,41,28,.5);pointer-events:none;z-index:1}
 .hero .container{position:relative;z-index:2}
 .hero h1{font-size:1.85rem;margin-bottom:1rem}
 .hero h1 span{color:var(--red)}
