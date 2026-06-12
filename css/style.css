@@ -363,3 +363,4 @@ img{max-width:100%;height:auto;display:block}
 .stats-section .stat-label{color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1.5px}
 .stats-grid .stat-item{border-left:1px solid rgba(255,255,255,.08)}
 .stats-grid .stat-item:first-child{border-left:none}
+.stats-grid .stat-item::before{content:'';display:block;width:32px;height:2px;background:var(--red);margin:0 auto .75rem}
